@@ -149,8 +149,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriaController.cs" />
+    <Compile Include="Controllers\ChamadoController.cs" />
+    <Compile Include="Controllers\EmpresaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
+    <Compile Include="Controllers\TecnicoController.cs" />
     <Compile Include="Controllers\VendaController.cs" />
     <Compile Include="Controllers\VendedorController.cs" />
     <Compile Include="Global.asax.cs">
@@ -164,9 +167,16 @@
     <Compile Include="Migrations\201804151638175_Vendas.Designer.cs">
       <DependentUpon>201804151638175_Vendas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804172341534_NovasTabelas.cs" />
+    <Compile Include="Migrations\201804172341534_NovasTabelas.Designer.cs">
+      <DependentUpon>201804172341534_NovasTabelas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Chamado.cs" />
+    <Compile Include="Models\Empresa.cs" />
     <Compile Include="Models\Produto.cs" />
+    <Compile Include="Models\Tecnico.cs" />
     <Compile Include="Models\Venda.cs" />
     <Compile Include="Models\Vendedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -229,6 +239,21 @@
     <Content Include="Views\Venda\Details.cshtml" />
     <Content Include="Views\Venda\Edit.cshtml" />
     <Content Include="Views\Venda\Index.cshtml" />
+    <Content Include="Views\Tecnico\Create.cshtml" />
+    <Content Include="Views\Tecnico\Delete.cshtml" />
+    <Content Include="Views\Tecnico\Details.cshtml" />
+    <Content Include="Views\Tecnico\Edit.cshtml" />
+    <Content Include="Views\Tecnico\Index.cshtml" />
+    <Content Include="Views\Empresa\Create.cshtml" />
+    <Content Include="Views\Empresa\Delete.cshtml" />
+    <Content Include="Views\Empresa\Details.cshtml" />
+    <Content Include="Views\Empresa\Edit.cshtml" />
+    <Content Include="Views\Empresa\Index.cshtml" />
+    <Content Include="Views\Chamado\Create.cshtml" />
+    <Content Include="Views\Chamado\Delete.cshtml" />
+    <Content Include="Views\Chamado\Details.cshtml" />
+    <Content Include="Views\Chamado\Edit.cshtml" />
+    <Content Include="Views\Chamado\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -252,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804151638175_Vendas.resx">
       <DependentUpon>201804151638175_Vendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804172341534_NovasTabelas.resx">
+      <DependentUpon>201804172341534_NovasTabelas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

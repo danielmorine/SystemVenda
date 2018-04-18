@@ -1,0 +1,42 @@
+﻿@model SystemVendas.Models.Tecnico
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tecnico</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeDotecnico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeDotecnico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefoneTecnico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefoneTecnico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailTecnico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailTecnico)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdTecnico }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

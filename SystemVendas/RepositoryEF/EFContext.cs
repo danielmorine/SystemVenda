@@ -18,6 +18,10 @@ namespace SystemVendas.RepositoryEF
         
         public DbSet<Venda> vendas { get; set; }
 
+        public DbSet<Tecnico> tecnicos { get; set; }
+        public DbSet<Empresa> empresas { get; set; }
+        public DbSet<Chamado> chamados { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

@@ -15,6 +15,8 @@ namespace SystemVendas.Models
         public int IdProduto { get; set; }
         public int IdVendedor { get; set; }
 
+        
+
         [ForeignKey("IdProduto")]
         public virtual Produto produtos {get; set;}
 

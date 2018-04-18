@@ -1,0 +1,65 @@
+﻿@model SystemVendas.Models.Chamado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Chamado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           OS:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdChamado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.empresas.NomeEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.empresas.NomeEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.empresas.Responsavel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.empresas.Responsavel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.empresas.TelefoneEmpresa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.empresas.TelefoneEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.empresas.Endereco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.empresas.Endereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tecnicos.NomeDotecnico)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.tecnicos.NomeDotecnico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tecnicos.TelefoneTecnico)
+        </dt>
+        <dd>@Html.DisplayFor(model => model.tecnicos.TelefoneTecnico)</dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdChamado }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

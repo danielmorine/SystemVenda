@@ -12,7 +12,7 @@ namespace SystemVendas.Models
         [Key]
         public int  idProduto { get; set; }
         public string nomeProduto { get; set; }
-        public string precoProduto { get; set; }
+        public double precoProduto { get; set; }
         public int IdCategoria { get; set; }
 
         //mapear chave estrangeira
