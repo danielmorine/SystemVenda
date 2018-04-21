@@ -10,6 +10,7 @@ namespace SystemVendas.Models
     {
         [Key]
         public  int idVendedor { get; set; }
+        [Display(Name = "Vendedor")]
         public  string nomeVendedor { get; set; }
     }
 }

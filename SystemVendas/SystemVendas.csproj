@@ -172,6 +172,10 @@
     <Compile Include="Migrations\201804172341534_NovasTabelas.Designer.cs">
       <DependentUpon>201804172341534_NovasTabelas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804212007395_novo.cs" />
+    <Compile Include="Migrations\201804212007395_novo.Designer.cs">
+      <DependentUpon>201804212007395_novo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Chamado.cs" />
@@ -186,6 +190,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\estilo.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -283,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804172341534_NovasTabelas.resx">
       <DependentUpon>201804172341534_NovasTabelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804212007395_novo.resx">
+      <DependentUpon>201804212007395_novo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
