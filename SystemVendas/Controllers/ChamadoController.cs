@@ -50,7 +50,7 @@ namespace SystemVendas.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "IdChamado,IdTecnico,IdEmpresa")] Chamado chamado)
+        public ActionResult Create([Bind(Include = "IdChamado,IdTecnico,IdEmpresa, Problema")] Chamado chamado)
         {
             if (ModelState.IsValid)
             {

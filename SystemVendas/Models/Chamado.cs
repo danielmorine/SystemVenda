@@ -14,6 +14,8 @@ namespace SystemVendas.Models
 
         public int IdTecnico { get; set; }
         public int IdEmpresa { get; set; }
+        
+        public string Problema { get; set; }
 
         [ForeignKey("IdTecnico")]
         public virtual Tecnico tecnicos { get; set; }

@@ -176,6 +176,10 @@
     <Compile Include="Migrations\201804212007395_novo.Designer.cs">
       <DependentUpon>201804212007395_novo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805091822281_novo230.cs" />
+    <Compile Include="Migrations\201805091822281_novo230.Designer.cs">
+      <DependentUpon>201805091822281_novo230.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Chamado.cs" />
@@ -291,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804212007395_novo.resx">
       <DependentUpon>201804212007395_novo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805091822281_novo230.resx">
+      <DependentUpon>201805091822281_novo230.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
